@@ -17,7 +17,7 @@ prework and load the packagge of fpp2
 
 
 ```{r}
-setwd('C:/Users/nkheth1/Desktop/Time Series and Forecasting/Final Project')
+setwd('C:/Users/xtorres1/Desktop/Time Series and Forecasting/Final Project')
 
 #daily.covid.worldwide=read.csv('covid_19_data.csv') 
 global.cases <- read.csv('time_series_covid_19_confirmed.csv')
@@ -53,7 +53,7 @@ cases.ts <- ts(global.cases[,c("Australia","China","Thailand", "US", "United Kin
                frequency = 365)
 cases.ts <- diff(cases.ts, 1)
 global.cases <- as.data.frame(cases.ts)
-write.csv(global.cases, "C://Users/nkheth1/Desktop/Time Series and Forecasting/Final Project/globalcases.csv",
+write.csv(global.cases, "C://Users/xtorres1/Desktop/Time Series and Forecasting/Final Project/globalcases.csv",
           row.names = FALSE)
 
 
